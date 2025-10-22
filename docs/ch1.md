@@ -27,6 +27,7 @@ $ java --class-path target/classes org.enricogiurin.ocp17.book.ch1.HelloWorld
 
 
 ### Variable Names
+- test
 ```java
     int $ = 5;
     int € = 66;

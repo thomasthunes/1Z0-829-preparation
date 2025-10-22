@@ -28,7 +28,7 @@ $ java --class-path target/classes org.enricogiurin.ocp17.book.ch1.HelloWorld
 
 ### Variable Names
 #### There are only four rules to remember for legal identifiers:
-1. Must begin with a *letter*, a *currency symbol*. or a *_ syumbol*.
+1. Must begin with a **letter**, a **currency symbol**. or a **_ syumbol**.
 2. Can include numbers but not start with them.
 3. A single underscore is not allowed as an identifier.
 4. Cannot use Java reserved words, like 'for'.

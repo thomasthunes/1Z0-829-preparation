@@ -18,6 +18,8 @@ ZonedDateTime.now(); //2023-05-14T19:56:46.627004+02:00[Europe/Zurich]
 jshell> java.time.Duration.ofSeconds(758768437)
 $54 ==> PT210769H37S
 ```
+
+Duration can only be used with objects that have time, otherwise it will throw an UnsupportedTemporalTypeException.
 ### toString
 PT24H : starts with **PT**
 

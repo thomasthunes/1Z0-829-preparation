@@ -52,7 +52,8 @@ System.out.println(p2);  //P2Y3M6D
 Period period = Period.ofYears(1).ofMonths(2).ofDays(1);
 System.out.println(period);  //P1D
 ```
-The `Period` class does not have methods such as `getSeconds()`, `getMinutes()`, `getHours()`.
+- The `Period` class does not have methods such as `getSeconds()`, `getMinutes()`, `getHours()`.
+- Period can only be used with objects that have date, otherwise it will throw an UnsupportedTemporalTypeException.
 
 ### toString
 P1D : starts with **P**

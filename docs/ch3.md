@@ -68,6 +68,28 @@ The value of a case statement must be one of these:
     }
 ```
 WARNING: You always need the `case`, a part in the `default` case.
+### colon(:) vs arrow(->) to seperate cases:
+When running a switch expression with colon, we must use 'break;' to avoid moving through the rest of the cases:
+```java
+int m = 1, n = 0;
+switch (m){
+   case 0: n++;
+   case 1: n++;
+   default: n++;
+}
+System.out.println(n); // outputs 2 because case 1 does not call 'break;'
+```
+Alternativly we can use arrows to avoid this:
+```java
+int m = 1, n = 0;
+switch (m){
+   case 0 -> n++;
+   case 1 -> n++;
+   default -> n++;
+}
+System.out.println(n); // outputs 1.
+```
+
 ### Multi cases
 I use comma (`,`)to separate values.
 ```java

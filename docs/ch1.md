@@ -80,6 +80,16 @@ x = 5;
 var x=5, y=6; //DOES NOT COMPILE
 ```
 [Usage of var](../src/main/java/org/enricogiurin/ocp17/book/ch1/UsageOfVar.java)
+### Primitive and wrapper classes
+A wrapper class can be converted to a primitive using the parse methods:
+```java
+int primitive = Integer.parseInt("123");
+```
+And we can convert a primitive to the wrapper class using value of.
+```java
+Integer wrapper = Integer.valueOf("123");
+```
+Converting primitives to wrapper classes allows us to access the wrapper class methods, such as toString.
 ### Garbage Collection
 ```java
  System.gc();

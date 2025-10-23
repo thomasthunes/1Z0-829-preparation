@@ -51,8 +51,8 @@ if(number instanceof Long nL) {}  //OK
 ```
 ## Switch
 There are two types of switch: 
-- A switch statement will execute some statement related to a case, e.g. update a variable. This kind of switch does not depend on covering all possible cases, and does not have a return valuie.
-- A switch Expression must cover all possible cases (like all enum types), or contain a default case for what will happen if none of the defined cases match. Aditionally, the switch expression returns some value, and must be assigned to a variable.
+1. A switch statement will execute some statement related to a case, e.g. update a variable. This kind of switch does not depend on covering all possible cases, and does not have a return valuie.
+2. A switch Expression must cover all possible cases (like all enum types), or contain a default case for what will happen if none of the defined cases match. Aditionally, the switch expression returns some value, and must be assigned to a variable.
 ### Switch Statement
 The value of a case statement must be one of these:
 * a constant;

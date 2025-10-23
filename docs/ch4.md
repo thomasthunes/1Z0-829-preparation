@@ -18,6 +18,12 @@ var s2=s.stripLeading();  // "01234   "
 //remove trailing spaces
 var s3 = s.stripTrailing(); // "  01234"
 ```
+### String trim
+Does the same as strip, but does not offer support for unicode.
+```java
+    String s = "  hello\u2002";  // \u2002 is a Unicode whitespace
+    System.out.println(s.trim());  // "hello\u2002" (doesn't remove \u2002)
+```
 ### CharSequence
 Both **String** and **StringBuilder** implement _CharSequence_.
 ### formatted

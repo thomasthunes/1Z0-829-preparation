@@ -49,7 +49,7 @@ public void go() {
 3. A default method is implicitly public (cannot be marked private or any other access modifiers.).
 4. A default method cannot be marked abstract, final, or static.
 5. A default method may be overridden by a class that implements the interface.
-6. if a class inherits two or more default methods with the same method signature, then the class must override the method.
+6. If a class inherits two or more default methods with the same method signature, then the class must override the method.
 
 #### default conflict abstract method
 ```java

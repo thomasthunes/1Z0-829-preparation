@@ -246,6 +246,18 @@ record Game() {
 It does not compile because records cannot include instance variables not listed in the declaration of the record, 
 as it could break immutability.
 
+### Record with instance initializers
+Instance intializers are not allowed, while static initializers are allowed.
+```java
+record Sheap(){
+    // Does not compile
+    {int i = 0;} 
+
+    // Compiles successfully
+    static {int i = 0;}
+}
+```
+
 ## enum
 ### Abstract method
 If an enum contains an abstract method, then every enum value must include an override of this abstract method.

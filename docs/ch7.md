@@ -287,6 +287,28 @@ record Sheap(){
 ```
 
 ## enum
+1. An enum can be defined inside a constructor or method, including main().
+2. If defined in a method or constructor, the enum can not have access modifiers.
+```java
+public class EnumContainer {
+    EnumContainer() {
+        enum Switch{ON, OF}
+        //does not compile
+        private enum Switch1{ON, OF}
+    }
+    void m1(){
+        enum Weather{SUN, CLOUDY, RAINY, SNOWY}      
+        //does not compile
+        public enum Weather1{SUN, CLOUDY, RAINY, SNOWY}
+    }
+    public static void main(String[] args) {
+        enum Dirs{NORTH, EAST, SOUTH, WEST}
+        //does not compile
+        protected enum Dirs{NORTH, EAST, SOUTH, WEST}
+    }
+}
+```
+
 ### Abstract method
 If an enum contains an abstract method, then every enum value must include an override of this abstract method.
 ```java

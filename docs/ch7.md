@@ -367,6 +367,16 @@ all the enum implements `Comparable`.
     set.add(CardinalPoints.WEST);
     System.out.println(set); //[NORTH, WEST, SOUTH]
 ```
+### Clone
+- The clone method can not be overridden in an enum because java.lang.Enum (which every enum extends) defines clone as final.
+```java
+public enum EnumA{
+  A, AA, AAA;
+  public Object clone(){ // Does not compile
+    return B
+  }
+}
+```
 
 ## Nested Classes
 ### Inner Class

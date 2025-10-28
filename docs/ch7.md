@@ -200,6 +200,11 @@ final class AFinal {
 }
 ```
 ## Record
+1. Records are implicitly final.
+2. Record instances are immutable.
+3. A record may have any number of overloaded constructors.
+4. A record may not extend other classes, but can implement any number of interfaces.
+
 ### Variables in Records
 - A record can not define instance fields
     - No instance variables

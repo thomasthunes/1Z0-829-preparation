@@ -200,6 +200,21 @@ final class AFinal {
 }
 ```
 ## Record
+### Variables in Records
+- A record can not define instance fields
+    - No instance variables
+    - No instance initializers
+```java
+public record Truck(int maxTonnage) implements Donut, Donut2 {
+    // Static variables are allowed
+    static int age = 10;
+    static {age = 11;}
+    
+    // Does not compile
+    int id = 3;
+    {this.maxTonnage = 20;}
+```
+
 ### Compact Constructor
 ```java
 public record Person(String firstName, String lastName) {

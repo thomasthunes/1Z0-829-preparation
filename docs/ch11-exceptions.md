@@ -83,6 +83,25 @@ try (bf) { // DOES NOT COMPILE
  } 
 bf = null;  //here I re-assign the variable used in the try block
 ```
+### try with resources and catch
+When an exception occurs, the resources are always closed before the catch is invoked:
+```java
+Device d = new Device();
+try(d){
+  d.open();
+  d.read(); // throws an exception
+  d.writeHeader("Test");
+  d.close();
+} catch (IOException e) {
+  System.out.println("Got Exception")
+} ...
+
+Output:
+Device Opened
+Device closed
+Got Exception
+```
+
 ### Closable & AutoClosable
 ```java
 package java.io;

@@ -121,6 +121,8 @@ Note that `AutoCloseable` is in the `java.lang` package, import it's not needed.
 `AutoCloseable` is a more general-purpose interface and can be used for any resource that needs to be closed, 
 not necessarily related to I/O.
 
+### CLosing a recource
+- any exceptions thrown while closing a resource is added to the list of suppressed exceptions.
 
 ## -g:vars
 [NullPointerException with -g:vars](../src/main/java/org/enricogiurin/ocp17/book/ch11/exceptions/NullPointerExceptionGVars.java)

@@ -379,7 +379,7 @@ public enum EnumA{
 ```
 
 ## Nested Classes
-##### Nested class
+#### Nested class
 1. Static nested class (declared with static).
 2. Inner class (non-static).
 ### Inner Class

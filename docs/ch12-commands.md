@@ -46,6 +46,7 @@ The java command has three module-related options.
 3. show the module resoultion logic
 
 ## describe modules
+Basically prints the module-info.java
 ```shell
 java -p mods -d moduleName
 java --module-path mods --describe-module moduleName

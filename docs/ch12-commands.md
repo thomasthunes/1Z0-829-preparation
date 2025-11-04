@@ -39,19 +39,27 @@ Abbreviated Form
 ```shell
 java -p mods -m zoo.animal.feeding/zoo.animal.feeding.Task
 ```
-### show-module-resolution
-show module resolution output during startup
-```shell
-java --show-module-resolution -p mods -m zoo.visitor/zoo.visitor.Tourist
-```
-When this option is present, the JVM will output information about how it resolved module dependencies.
-
+## Getting details with java
+The java command has three module-related options.
+1. describe a module
+2. list a module
+3. show the module resoultion logic
 
 ## describe modules
 ```shell
 java -p mods -d moduleName
 java --module-path mods --describe-module moduleName
 ```
+## list
+```shell
+java --list-modules
+```
+### show-module-resolution
+show module resolution output during startup
+```shell
+java --show-module-resolution -p mods -m zoo.visitor/zoo.visitor.Tourist
+```
+When this option is present, the JVM will output information about how it resolved module dependencies.
 
 ### Example
 extended:
@@ -67,10 +75,6 @@ output
 zoo.tours.api file:///Users/enrico/github/ocp17/sybex-1Z0-829-chapter-12/mods/zoo.tours.api.jar
 exports zoo.tours.api
 requires java.base mandated
-```
-## list
-```shell
-java --list-modules
 ```
 
 ## describe-module - jar
